@@ -3,7 +3,7 @@ Categories:
   - System
 License: MIT
 AuthorName: Samyak Kamble
-AuthorEmail: samyak.kamble2403@gmail.com
+AuthorEmail: samyakkamble6659@gmail.com
 WebSite: https://github.com/samyak2403/EMFMagneticFieldDetector
 SourceCode: https://github.com/samyak2403/EMFMagneticFieldDetector
 IssueTracker: https://github.com/samyak2403/EMFMagneticFieldDetector/issues
@@ -12,29 +12,35 @@ Changelog: https://github.com/samyak2403/EMFMagneticFieldDetector/blob/main/CHAN
 AutoName: EMF Magnetic Field Detector
 
 RepoType: git
-Repo: https://github.com/samyak2403/EMFMagneticFieldDetector
+Repo: https://github.com/samyak2403/EMFMagneticFieldDetector.git
 
 Builds:
-  - versionName: '1.0.0'
+  - versionName: 1.0.0
     versionCode: 1
     commit: v1.0.0
     subdir: app
     gradle:
       - yes
+    output: build/outputs/apk/release/app-release.apk
+    prebuild:
+      - mkdir -p $HOME/.gradle
+      - echo "org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError" > $HOME/.gradle/gradle.properties
+    scandelete:
+      - app/src/androidTest/assets
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.0.0'
+CurrentVersion: 1.0.0
 CurrentVersionCode: 1
 
 Description: |
-  EMF Magnetic Field Detector is a professional-grade electromagnetic field detection tool that utilizes your device's magnetic sensor to measure EMF levels in your surroundings.
+  A professional-grade electromagnetic field detection tool that utilizes your device's magnetic sensor to measure EMF levels in your surroundings.
 
   Features:
   * Real-time EMF Detection with accurate measurements in microTesla (µT)
   * Visual Speedometer Display for easy reading
   * Background Scanning capability
-  * Material Design 3 UI for modern look and feel
+  * Material Design 3 UI
   * Clean and minimal interface
   * Works completely offline
   * No tracking or analytics
@@ -47,8 +53,11 @@ Description: |
   * Basic EMF investigations
 
 RequiresRoot: No
+
 MaintainerNotes: |
   * App uses Material Design 3
   * Requires magnetic sensor
   * Minimum SDK 24 (Android 7.0)
   * Built with Jetpack Compose
+  * Gradle memory settings configured for optimal build performance
+  * Test assets excluded from build for size optimization
