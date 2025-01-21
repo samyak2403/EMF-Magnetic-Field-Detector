@@ -1,0 +1,26 @@
+Categories:
+  - Science & Education
+  - System
+License: GPL-3.0-or-later
+AuthorName: Samyak Kamble
+SourceCode: https://github.com/samyak2403/EMFMagneticFieldDetector
+IssueTracker: https://github.com/samyak2403/EMFMagneticFieldDetector/issues
+Changelog: https://github.com/samyak2403/EMFMagneticFieldDetector/releases
+
+AutoName: EMF Magnetic Field Detector
+
+RepoType: git
+Repo: https://github.com/samyak2403/EMFMagneticFieldDetector
+
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0.0'
+CurrentVersionCode: 1

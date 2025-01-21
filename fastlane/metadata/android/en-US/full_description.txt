@@ -1,0 +1,20 @@
+EMF Magnetic Field Detector is a professional-grade electromagnetic field detection tool that utilizes your device's magnetic sensor to measure EMF levels in your surroundings.
+
+Features:
+* Real-time EMF Detection with accurate measurements in microTesla (µT)
+* Visual Speedometer Display for easy reading
+* Background Scanning capability
+* Material Design 3 UI for modern look and feel
+* Clean and minimal interface
+* Open source and free of advertisements
+* No tracking or analytics
+* Minimal permissions required
+* Works completely offline
+
+This app is perfect for:
+- General EMF detection and measurement
+- Finding sources of electromagnetic fields
+- Educational purposes
+- Basic EMF investigations
+
+The app is completely free, open source, and contains no advertisements or tracking.
