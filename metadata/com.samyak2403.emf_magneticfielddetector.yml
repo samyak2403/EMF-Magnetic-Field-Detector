@@ -22,11 +22,6 @@ Builds:
     gradle:
       - yes
     output: C:\Users\Samya\AndroidStudioProjects\EMFMagneticFieldDetector\app\release\EMF_Magnetic_Field_Detector v1.0.apk
-    prebuild:
-      - mkdir -p $HOME/.gradle
-      - echo "org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError" > $HOME/.gradle/gradle.properties
-    scandelete:
-      - app/src/androidTest/assets
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
