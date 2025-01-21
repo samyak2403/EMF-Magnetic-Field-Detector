@@ -15,9 +15,9 @@ RepoType: git
 Repo: https://github.com/samyak2403/EMFMagneticFieldDetector.git
 
 Builds:
-  - versionName: 1.0.0
+  - versionName: 1.0
     versionCode: 1
-    commit: v1.0.0
+    commit: v1.0
     subdir: app
     gradle:
       - yes
@@ -30,7 +30,7 @@ Builds:
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
+CurrentVersion: 1.0
 CurrentVersionCode: 1
 
 Description: |
