@@ -2,57 +2,26 @@ Categories:
   - Science & Education
   - System
 License: MIT
-AuthorName: Samyak Kamble
-AuthorEmail: samyakkamble6659@gmail.com
-WebSite: https://github.com/samyak2403/EMFMagneticFieldDetector
 SourceCode: https://github.com/samyak2403/EMFMagneticFieldDetector
-IssueTracker: https://github.com/samyak2403/EMFMagneticFieldDetector/issues
-Changelog: https://github.com/samyak2403/EMFMagneticFieldDetector/blob/main/CHANGELOG.md
-
-AutoName: EMF Magnetic Field Detector
 
 RepoType: git
-Repo: https://github.com/samyak2403/EMFMagneticFieldDetector.git
+Repo: https://github.com/samyak2403/EMFMagneticFieldDetector
 
 Builds:
-  - versionName: 1.0
+  - versionName: '1.0'
     versionCode: 1
     commit: v1.0
+    # Where build.gradle is:
     subdir: app
+    sudo:
+      - apt-get update
+      # see text below
+      - apt-get install -y librsvg2-bin
+      - update-alternatives --auto java
     gradle:
       - yes
-    output: C:\Users\Samya\AndroidStudioProjects\EMFMagneticFieldDetector\app\release\EMF_Magnetic_Field_Detector v1.0.apk
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0
+CurrentVersion: '1.0'
 CurrentVersionCode: 1
-
-Description: |
-  A professional-grade electromagnetic field detection tool that utilizes your device's magnetic sensor to measure EMF levels in your surroundings.
-
-  Features:
-  * Real-time EMF Detection with accurate measurements in microTesla (µT)
-  * Visual Speedometer Display for easy reading
-  * Background Scanning capability
-  * Material Design 3 UI
-  * Clean and minimal interface
-  * Works completely offline
-  * No tracking or analytics
-  * Minimal permissions required
-
-  This app is perfect for:
-  * General EMF detection and measurement
-  * Finding sources of electromagnetic fields
-  * Educational purposes
-  * Basic EMF investigations
-
-RequiresRoot: No
-
-MaintainerNotes: |
-  * App uses Material Design 3
-  * Requires magnetic sensor
-  * Minimum SDK 24 (Android 7.0)
-  * Built with Jetpack Compose
-  * Gradle memory settings configured for optimal build performance
-  * Test assets excluded from build for size optimization
