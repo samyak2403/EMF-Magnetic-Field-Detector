@@ -1,4 +1,4 @@
-# EMF Magnetic Field Detector v1.0.0
+# EMF Magnetic Field Detector v1.0
 
 Initial release of EMF Magnetic Field Detector - a professional-grade EMF detection tool that uses your device's magnetic sensor.
 
