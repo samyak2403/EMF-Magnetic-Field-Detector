@@ -6,8 +6,8 @@ AuthorName: Samyak Kamble
 SourceCode: https://github.com/samyak2403/EMFMagneticFieldDetector
 IssueTracker: https://github.com/samyak2403/EMFMagneticFieldDetector/issues
 Changelog: https://github.com/samyak2403/EMFMagneticFieldDetector/blob/main/CHANGELOG.md
-
 AutoName: EMF - Magnetic Field Detector
+
 Description: |
   A professional-grade EMF (Electromagnetic Field) detector app that uses your device's magnetic sensor to measure electromagnetic fields in your surroundings.
 
