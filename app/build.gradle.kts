@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.samyak2403.emf_magneticfielddetector"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.samyak2403.emf_magneticfielddetector"
@@ -65,7 +65,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -83,13 +82,10 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
 
     implementation("com.github.anastr:speedometer:1.0.0-ALPHA02")
-
-    // Speedometer
-//    implementation("com.github.anastr:speedviewlib:1.6.1") // Updated Speedometer library
     
     // Sensors
     implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     
     // Additional Compose Dependencies
     implementation("androidx.compose.runtime:runtime:1.5.4")
