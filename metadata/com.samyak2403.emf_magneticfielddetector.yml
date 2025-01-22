@@ -2,24 +2,38 @@ Categories:
   - Science & Education
   - System
 License: MIT
+AuthorName: Samyak Kamble
 SourceCode: https://github.com/samyak2403/EMFMagneticFieldDetector
+IssueTracker: https://github.com/samyak2403/EMFMagneticFieldDetector/issues
+Changelog: https://github.com/samyak2403/EMFMagneticFieldDetector/blob/main/CHANGELOG.md
+AutoName: EMF - Magnetic Field Detector
+
+ 
+Description: |
+  A professional-grade EMF (Electromagnetic Field) detector app that uses your device's magnetic sensor to measure electromagnetic fields in your surroundings.
+
+  Features:
+  * Real-time EMF Detection with accurate measurements in microTesla (µT)
+  * Visual Speedometer Display for easy reading
+  * Graph visualization for EMF history
+  * Magnetic field components (X, Y, Z) display
+  * Background Scanning capability
+  * Material Design 3 UI for modern look and feel
+  * Works offline - no internet required
+  * Privacy focused - no tracking or analytics
 
 RepoType: git
 Repo: https://github.com/samyak2403/EMFMagneticFieldDetector
 
 Builds:
-  - versionName: '1.0'
+  - versionName: 1.0.0
     versionCode: 1
-    commit: v1.0
+    commit: v1.0.0
     subdir: app
-    prebuild:
-      - apt-get update
-      - apt-get install -y librsvg2-bin
-      - update-alternatives --auto java
     gradle:
       - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: '1.0'
+CurrentVersion: 1.0.0
 CurrentVersionCode: 1
