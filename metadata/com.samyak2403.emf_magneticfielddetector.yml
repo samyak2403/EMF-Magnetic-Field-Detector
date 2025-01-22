@@ -11,11 +11,9 @@ Builds:
   - versionName: '1.0'
     versionCode: 1
     commit: v1.0
-    # Where build.gradle is:
     subdir: app
-    sudo:
+    prebuild:
       - apt-get update
-      # see text below
       - apt-get install -y librsvg2-bin
       - update-alternatives --auto java
     gradle:
