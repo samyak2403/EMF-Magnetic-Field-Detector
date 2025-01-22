@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
+    id("org.jetbrains.compose")
 }
 
 android {
@@ -54,7 +54,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = libs.versions.kotlinCompilerExtension.get()
     }
 
     packaging {
@@ -75,23 +75,19 @@ dependencies {
     implementation(libs.androidx.material3)
     
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.7.6")
+    implementation(libs.navigation.compose)
 
     // Material Icons
-    implementation("androidx.compose.material:material-icons-core:1.5.4")
-    implementation("androidx.compose.material:material-icons-extended:1.5.4")
+    implementation(libs.material.icons.core)
+    implementation(libs.material.icons.extended)
 
-    implementation("com.github.anastr:speedometer:1.0.0-ALPHA02")
-    
-    // Sensors
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation(libs.speedometer)
     
     // Additional Compose Dependencies
-    implementation("androidx.compose.runtime:runtime:1.5.4")
-    implementation("androidx.compose.foundation:foundation:1.5.4")
-    implementation("androidx.compose.foundation:foundation-layout:1.5.4")
-    implementation("androidx.compose.animation:animation:1.5.4")
+    implementation(libs.compose.runtime)
+    implementation(libs.compose.foundation)
+    implementation(libs.compose.foundation.layout)
+    implementation(libs.compose.animation)
     
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
